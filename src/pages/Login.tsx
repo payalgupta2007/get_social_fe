@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    navigate("/feed");
+    // Add login logic here
+  };
+
   return (
     <div className="flex flex-row h-screen">
       <div className="w-1/2 flex bg-black text-white justify-center items-center">
@@ -17,7 +26,7 @@ export default function Login() {
         </div>
       </div>
       <div className="w-1/2 flex-col bg-white flex justify-center items-center">
-        <form className="w-3/4 max-w-sm p-2">
+        <form onSubmit={handleLogin} className="w-3/4 max-w-sm p-2">
           <h2 className="text-2xl font-bold mb-10 text-center">Login</h2>
           <div>
             <label htmlFor="email" className="block mb-2 font-bold">
