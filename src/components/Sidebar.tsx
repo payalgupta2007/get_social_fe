@@ -13,7 +13,7 @@ export default function Sidebar() {
   const pathname = location.pathname;
 
   return (
-    <div className="w-1/5 flex flex-col bg-white items-center">
+    <div className="w-full flex flex-col items-center">
       <div
         className="text-3xl font-bold mt-5"
         style={{

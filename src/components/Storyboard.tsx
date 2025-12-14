@@ -12,6 +12,8 @@ export default function Storyboard() {
     { id: 2, name: "Jane Smith", image: img1 },
     { id: 3, name: "Bob Johnson", image: img2 },
     { id: 4, name: "Dobby", image: img3 },
+    { id: 4, name: "Dobby", image: img3 },
+    { id: 2, name: "Jane Smith", image: img1 },
   ];
   return (
     <>
